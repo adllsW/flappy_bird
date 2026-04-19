@@ -129,9 +129,9 @@ def draw_menu():
     draw.rect(panel, (0, 0, 0, 140), (0, 0, 500, 270), border_radius=18)
     window.blit(panel, (win_w // 2 - 250, win_h // 2 - 155))
 
-    t1 = main_font.render("FLAPPY BIRD", True, (255, 225, 0))
-    t2 = small_font.render("Пробіл або W - стрибок", True, (255, 255, 255))
-    t3 = small_font.render("Рекорд: " + str(best_score), True, (255, 200, 80))
+    t1 = main_font.render("Flappy Bird", True, (255, 225, 0))
+    t2 = small_font.render("space - w - up", True, (255, 255, 255))
+    t3 = small_font.render("record: " + str(best_score), True, (255, 200, 80))
     window.blit(t1, (win_w // 2 - t1.get_width() // 2, win_h // 2 - 135))
     window.blit(t2, (win_w // 2 - t2.get_width() // 2, win_h // 2 - 30))
     window.blit(t3, (win_w // 2 - t3.get_width() // 2, win_h // 2 + 15))
@@ -140,7 +140,7 @@ def draw_menu():
     btn_y = win_h // 2 + 65
     draw.rect(window, (255, 200, 0), (btn_x, btn_y, 220, 52), border_radius=12)
     draw.rect(window, (190, 140, 0), (btn_x, btn_y, 220, 52), 3, border_radius=12)
-    bt = med_font.render("ГРАТИ", True, (50, 30, 0))
+    bt = med_font.render("play", True, (50, 30, 0))
     window.blit(bt, (btn_x + 110 - bt.get_width() // 2, btn_y + 26 - bt.get_height() // 2))
 
 def draw_gameover():
@@ -152,9 +152,9 @@ def draw_gameover():
     draw.rect(panel, (0, 0, 0, 175), (0, 0, 460, 290), border_radius=18)
     window.blit(panel, (win_w // 2 - 230, win_h // 2 - 165))
 
-    t1 = main_font.render("ГРА ЗАКІНЧЕНА", True, (255, 75, 75))
-    t2 = med_font.render("Рахунок: " + str(score), True, (255, 255, 255))
-    t3 = med_font.render("Рекорд: " + str(best_score), True, (255, 215, 55))
+    t1 = main_font.render("game over", True, (255, 75, 75))
+    t2 = med_font.render("score: " + str(score), True, (255, 255, 255))
+    t3 = med_font.render("record: " + str(best_score), True, (255, 215, 55))
     window.blit(t1, (win_w // 2 - t1.get_width() // 2, win_h // 2 - 148))
     window.blit(t2, (win_w // 2 - t2.get_width() // 2, win_h // 2 - 55))
     window.blit(t3, (win_w // 2 - t3.get_width() // 2, win_h // 2 + 0))
@@ -163,7 +163,7 @@ def draw_gameover():
     btn_y = win_h // 2 + 60
     draw.rect(window, (75, 195, 115), (btn_x, btn_y, 260, 58), border_radius=13)
     draw.rect(window, (35, 135, 75), (btn_x, btn_y, 260, 58), 3, border_radius=13)
-    bt = med_font.render("RESTART  (R)", True, (10, 40, 15))
+    bt = med_font.render("restart (r)", True, (10, 40, 15))
     window.blit(bt, (btn_x + 130 - bt.get_width() // 2, btn_y + 29 - bt.get_height() // 2))
 
 running = True
